@@ -242,6 +242,8 @@ body {
 /** Acerca de Nosotros **/
 
 /** Nuestros Proyectos **/
+
+
 .our-projects {
 	position: relative;
 	width: 100%;
@@ -253,7 +255,7 @@ body {
 	margin-top: 120px;
 }
 .our-projects .deg-background {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -266,206 +268,29 @@ body {
 	height: 100%;
 }
 
-.our-projects .project-img nave  {
-	width: 600%;
-	height: 600%;
-}
-.our-projects .container-project {
-	width: 100%;
-	margin: auto;
-	padding-top: 100px;
-}
-.our-projects .container-project .project-title {
-	border: 2px solid #fff;
-	padding: 10px;
-	text-align: center;
-	width: 50%;
-	margin: auto;
-}
-.our-projects .container-project .project-title h2 {
-	font-size: 40px;
-	color: #fff;
-	font-weight: normal;
-}
-.our-projects .container-project .project-title hr {
-	background: #ffff;
-	width: 50%;
-	height: 3px;
-	margin: 10px auto;
-}
-.our-projects .container-project .project-img {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 80px;
-	padding-bottom: 100px;
-}
-.our-projects .container-project .project-img img {
-	width: calc(30% - 10px);
-	margin: 20px;
-	object-fit: cover;
-	border-radius: 10px;
-	cursor: pointer;
+.our-projects div.galeria {
+	margin: 20px 30px;
+	margin-left: 85px;
+	margin-top: 40px;
+    float: left;
+    width: 200px;
 }
 
-
-
-/** Footer **/
-.footer {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background: url(../img/footer.png);
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+.our-projects div.galeria img{
+	width: 130%;
+	height: auto;
 }
 
-.footer .deg-footer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.7);
-}
-.footer .ejeZfooter {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-.footer .footer-content {
-	padding-top: 100px;
-	width: 25%;
-	margin: auto;
+.our-projects div.nashe {
+	margin: 20px 40px;
+	margin-right: 90px;
+	margin-top: 40px;
+    float: right;
+    width: 200px;
 }
 
-.contenedor-footer {
-	display: flex;
-	width: 90%;
-	justify-content: space-evenly;
-	margin: auto;
-	padding-bottom: 50px;
-	border-bottom: 1px solid #ccc;
+.our-projects div.nashe img{
+	width: 120%;
+	height: auto;
 }
 
-.contenedor-foo {
-	text-align: center;
-}
-
-.contenedor-foo h4 {
-	color: #fff;
-	border-bottom: 3px solid #af20d3;
-	padding-bottom: 5px;
-	margin-bottom: 20px;
-}
-
-.contenedor-foo p {
-	color: #ccc;
-	text-align: center;
-}
-
-.contenedor-final {
-	text-align: center;
-}
-/** Footer **/
-
-/** Media Query **/
-
-@media only screen and (max-width: 900px) {
-	.btn-menu > .fa-bars {
-		display: block;
-		position: absolute;
-		right: 30px;
-		top: 20px;
-		font-size: 28px;
-		color: var(--black);
-		transition: 0.5s;
-		cursor: pointer;
-	}
-	.btn-menu > .fa-bars:hover {
-		color: var(--red);
-	}
-	.btn-menu > .fa-times {
-		color: var(--red);
-	}
-	.menu .list-container {
-		position: fixed;
-		top: 60px;
-		left: -100%;
-		background: #ffff;
-		width: 100%;
-		height: calc(100vh - 60px);
-	}
-	.menu .list-container .lists {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		border-top: 4px solid var(--red);
-	}
-	.menu .list-container .lists li {
-		width: 90%;
-		border-bottom: 2px solid var(--black);
-		display: flex;
-		justify-content: center;
-	}
-	.menu .list-container .lists li a {
-		font-size: 20px;
-		text-align: center;
-		padding: 12px 0px;
-	}
-	.menu .list-container .lists li a.activo {
-		background: none;
-		color: var(--red);
-	}
-	.menu .list-container .lists li a:hover {
-		background: none;
-		color: var(--red);
-	}
-}
-
-@media only screen and (max-width: 773px) {
-	/** IMG header **/
-	.img-header .welcome h1 {
-		font-size: 40px;
-	}
-	.img-header .welcome > button {
-		width: 130px;
-		font-size: 20px;
-	}
-
-	/** Acerca de Nosotros **/
-	.acerca-de .info-container .about-gallery {
-		flex-direction: column;
-	}
-	.acerca-de .info-container .about-gallery img {
-		width: 100%;
-	}
-
-	/** Nuestros Proyectos **/
-	.our-projects .container-project .project-img img {
-		width: 80%;
-		margin-bottom: 30px;
-	}
-}
-
-@media only screen and (max-width: 590px) {
-	/** Img Header **/
-	.img-header .welcome h1 {
-		font-size: 30px;
-	}
-	.img-header .welcome hr {
-		width: 100px;
-	}
-	.img-header .welcome p {
-		font-size: 17px;
-	}
-	.img-header .welcome > button {
-		width: 100px;
-		font-size: 17px;
-	}
-}
