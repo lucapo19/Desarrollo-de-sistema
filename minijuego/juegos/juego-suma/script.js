@@ -1,5 +1,6 @@
 var num1, num2, respuesta;
 txt_suma = document.getElementById("suma");
+txt_resta = document.getElementById("resta");
 op1 = document.getElementById("op1");
 op2 = document.getElementById("op2");
 op3 = document.getElementById("op3");
@@ -11,12 +12,13 @@ function comenzar(){
 	txt_msj.innerHTML = "";
 
 	//genera la suma - Numeros aleatorios entre 0 1 9
-	num1 = Math.round(Math.random()*9);
-	num2 = Math.round(Math.random()*9);
+	num1 = Math.round(Math.random()*30);
+	num2 = Math.round(Math.random()*30);
 	respuesta = num1 + num2;
+	respuesta = num1 - num2;
 	//asignamos lo números para que se muestren
 	suma.innerHTML = num1 + " + " + num2 + " = ";
-
+    resta.innerHTML = num1 - " - " - num2 - " = ";
 	//genero un número entre 0 y 2 para colocar la opcion correcta
 	indiceOpCorrecta = Math.round(Math.random()*2);
 	console.log(indiceOpCorrecta);
@@ -59,7 +61,6 @@ function limpiar(){
 }
 
 comenzar();
-
 
 
 
