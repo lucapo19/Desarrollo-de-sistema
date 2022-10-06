@@ -48,7 +48,7 @@ body {
 	left: 0;
 	border-width: 0 0 10vh 100vw;
 	border-style: solid;
-	border-color: transparent transparent #fff transparent;
+	border-color: #fff ;
 }
 .skew-arriba {
 	position: absolute;
@@ -56,7 +56,7 @@ body {
 	left: 0;
 	border-width: 10vh 100vw 0 0;
 	border-style: solid;
-	border-color: #fff transparent transparent transparent;
+	border-color: #fff;
 	z-index: 10;
 }
 
@@ -124,6 +124,7 @@ body {
 /** Menu de Navegacion **/
 
 /** IMG - Header **/
+
 .img-header {
 	position: relative;
 	width: 100%;
@@ -133,6 +134,7 @@ body {
 	background-position: center;
 	background-size: cover;
 }
+
 .img-header .welcome {
 	position: absolute;
 	top: 0;
@@ -146,11 +148,13 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
+
 .img-header .welcome h1 {
 	font-size: 50px;
 	color: #fff;
 	font-weight: 200;
 }
+
 .img-header .welcome hr {
 	width: 400px;
 	height: 2px;
@@ -158,11 +162,13 @@ body {
 	border: none;
 	margin-top: 5px;
 }
+
 .img-header .welcome p {
 	font-size: 20px;
 	color: #ffff;
 	margin-top: 20px;
 }
+
 .img-header .welcome > button {
 	width: 170px;
 	height: 40px;
@@ -177,6 +183,7 @@ body {
 	cursor: pointer;
 	transition: 0.5s;
 }
+
 .img-header .welcome > button:hover {
 	background: var(--blue);
 }
