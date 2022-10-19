@@ -1,8 +1,9 @@
 //cargo en un arreglo las imganes de las banderas. Este sera el orden que se mostrarán
-let banderas = ["pa.svg", "bo.svg", "ad.svg", "gb.svg", "na.svg"];
+let banderas = ["pa.svg", "bo.svg", "ad.svg", "gb.svg", "na.svg","ym.svg", "sing.jpg", "cnd.jpg", "nvz.svg", "mdg.jpg"
+];
 
 //arreglo que guardara la opcion correcta
-let correcta = [2,2,1,1,0];
+let correcta = [2,2,1,1,0,0,0,1,0,2];
 
 //arreglo que guardara los paises a mostrar en cada jugada
 let opciones = [];
@@ -12,7 +13,11 @@ opciones.push(["PERU", "ITALIA", "BOLIVIA"]);
 opciones.push(["TUNEZ", "ANDORRA", "ANTIGUA Y BARBUDA"]);
 opciones.push(["UCRANIA", "REINO UNIDO", "MADAGASCAR"]);
 opciones.push(["NAMIBIA", "OMAN", "ETIOPIA"]);
-
+opciones.push(["YEMEN", "TURQUIA", "EMIRATOS ARABES"]);
+opciones.push(["SINGAPUR", "SURINAM", "TRINIDAD Y TOBAGO"]);
+opciones.push(["GUYANA", "CANADA", "DINAMARCA"]);
+opciones.push(["NUEVA ZELANDA", "AUSTRALIA", "MALASIA"]);
+opciones.push(["OMAN", "INDIA", "MADAGASCAR"]);
 //variable que guarda la posicion actual
 let posActual = 0;
 //variable que guarda la cantidad acertadas hasta el moemento
@@ -26,7 +31,6 @@ function comenzarJuego(){
     document.getElementById("pantalla-inicial").style.display = "none";
     document.getElementById("pantalla-juego").style.display = "block";
     cargarBandera();
-
 }
 
 //funcion que carga la siguiente bandera y sus opciones
