@@ -72,13 +72,13 @@ function moverUsuario(e){
     switch(e.key){
         case 'ArrowLeft':
             if(posicionActualUsuario[0] > 0){
-                posicionActualUsuario[0] -= 10
+                posicionActualUsuario[0] -= 20
                 dibujarUsuario()
             }
             break
         case 'ArrowRight':
             if(posicionActualUsuario[0] < (anchoTablero - anchoBloque)){
-                posicionActualUsuario[0] += 10
+                posicionActualUsuario[0] += 20
                 dibujarUsuario()
             }
             break
@@ -107,7 +107,7 @@ function moverBola(){
     //Todas las funciones
 }
 //Intervalo que se ejecuta cada 20 milisegundos PRINCIPAL DE EL JUEGO
-timerId = setInterval(moverBola, 20)
+timerId = setInterval(moverBola, 10)
 //Definir la funcion que revia las colisiones
 function revisarColisiones(){
     //Colision con bloques
