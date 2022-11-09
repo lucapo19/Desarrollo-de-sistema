@@ -247,15 +247,15 @@ body {
 
 
 .our-projects div.galeria {
-	margin: 20px 30px;
-	margin-left: 85px;
+	margin: 20px 40px;
+	margin-right: 90px;
 	margin-top: 40px;
     float: left;
     width: 200px;
 }
 
 .our-projects div.galeria img{
-	width: 130%;
+	width: 120%;
 	height: auto;
 }
 
@@ -268,6 +268,19 @@ body {
 }
 
 .our-projects div.nashe img{
+	width: 120%;
+	height: auto;
+}
+
+.our-projects div.xd {
+	margin: 20px 40px;
+	margin-right: 90px;
+	margin-top: 40px;
+    float: right;
+    width: 200px;
+}
+
+.our-projects div.xd img{
 	width: 120%;
 	height: auto;
 }
